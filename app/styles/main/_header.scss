@@ -1,0 +1,45 @@
+.header {
+
+	background: $base-color;
+	padding: 17px 10px 6px;
+
+	.row {
+
+		@extend %inline-flex;
+		@include align-items(center);
+		@include flex-direction(row);
+		@include flex-wrap(nowrap);
+	
+		.img-responsive {
+
+			left: 5px;
+			position: absolute;
+			top: 10px;
+
+		}
+		
+
+		.header_title {
+
+			@include align-items(center);
+			@include flex-direction(row);
+			@include flex-wrap(nowrap);
+			font-size: 25px;
+			line-height: 17px;
+	    	@extend %inline-flex;
+	    	color: white;
+	    	font-family: Roboto, sans-serif;
+	    	font-weight: 400;
+	    	margin-left: 35px;
+
+		}
+
+	}
+
+}
+
+
+
+
+
+

@@ -1,14 +1,14 @@
-<aside class="sidebar fixed">
+<aside class="sidebar fixed" ng-class="{ 'toggle': hideDetails }">
   
   <ul ng-cloak>
 
     <li>
 
-      <a ng-href="#/">
+      <a ng-href="#/" class="sidebar_link-lenta">
 
         <i class="fa fa-list-alt fa-2x" aria-hidden="true"></i>
 
-        <span class="">Лента событий</span>
+        <span class="sidebar_item-lenta" ng-hide="hideDetails">Лента событий</span>
         
       </a>
       
@@ -16,11 +16,11 @@
 
     <li>
 
-      <a href="#/">
+      <a href="#/" class="sidebar_link-building">
 
       <i class="fa fa-building-o fa-2x" aria-hidden="true"></i>
 
-      <span class="">Предприятия</span>
+      <span class="sidebar_item-building" ng-hide="hideDetails">Предприятия</span>
 
       </a>
       
@@ -28,11 +28,11 @@
 
     <li>
 
-      <a href="#/">
+      <a href="#/" class="sidebar_link-cog">
 
       <i class="fa fa-cog fa-2x" aria-hidden="true"></i>
 
-      <span class="">Настройки</span>
+      <span class="sidebar_item-cog" ng-hide="hideDetails">Настройки</span>
       
       </a>
      

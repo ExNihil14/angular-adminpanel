@@ -13,7 +13,7 @@ angular.module('Home', []);
  * Main module of the application.
  */
 angular
-  .module('angularAdminpanelApp', ['Authentication',
+  .module('angularAdminpanelApp', ['ui.bootstrap','Authentication',
     'Home',
     'ngCookies',
     'ngRoute'

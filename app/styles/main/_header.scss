@@ -1,15 +1,20 @@
 .header {
 
 	background: $base-color;
-	padding: 17px 10px 6px;
-
+	height: 50px;
+	   	
+		
 	.row {
 
-		@extend %inline-flex;
-		@include align-items(center);
-		@include flex-direction(row);
-		@include flex-wrap(nowrap);
-	
+		@include flexbox;
+    	@include flex-direction(row);
+    	@include justify-content(space-between);
+    	@include align-items(center);
+
+    	.left {
+    		margin-top: 17px;
+    	}
+
 		.img-responsive {
 
 			left: 5px;
@@ -18,7 +23,6 @@
 
 		}
 		
-
 		.header_title {
 
 			@include align-items(center);
@@ -30,7 +34,71 @@
 	    	color: white;
 	    	font-family: Roboto, sans-serif;
 	    	font-weight: 400;
+	    	margin-left: 30px;
+	    	
+
+	    }
+
+	    .header_toggle {
+	    	color:#fff;
 	    	margin-left: 35px;
+	    }
+
+		p {
+
+			display: inline-block;
+
+		}
+
+		.right {
+
+			@include flexbox;
+    		@include flex-direction(row);
+    		@include justify-content(flex-end);
+    		@include align-items(center);
+    		margin-top: 8px;
+    		padding-right: 0;
+
+    		.btn-primary {
+
+    			background-color: inherit;
+    			border:none;
+
+    		}
+
+    		.caret {
+			    
+			    margin-left: 10px;
+			    border-top: 6px dashed;
+			    border-top: 6px solid \9;
+			    border-right: 6px solid transparent;
+			    border-left: 6px solid transparent;
+
+			}
+
+    		.dropdown-menu {
+
+			    
+			    left: -72px;
+			    font-size: 16px;
+			    margin: 7px 0 0;
+			    font-weight: 400;
+			    padding: 0;
+
+			    a {
+			    	padding: 10px 20px;
+
+			    	&:hover {
+			    		background-color: #cdcdcd;
+			    	}
+			    }
+
+			    i {
+			    	padding-right: 15px;
+			    }
+			   
+
+			}
 
 		}
 

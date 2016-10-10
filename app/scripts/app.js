@@ -31,7 +31,7 @@ angular
             controller: 'HomeController',
             templateUrl: 'modules/home/views/home.html'
         })
- 
+
         .otherwise({ redirectTo: '/login' });
 }])
  

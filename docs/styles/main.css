@@ -293,6 +293,10 @@ a:focus {
   display: none;
 }
 
+.wrapper i {
+  margin-right: 5px;
+}
+
 .wrapper .label-checkbox {
   color: rgba(0, 0, 0, 0.87);
   font-size: 14px;

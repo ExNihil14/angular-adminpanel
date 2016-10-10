@@ -7,11 +7,11 @@
 
 .wrapper {
 
-	margin-top: 140px;
+	margin-top: 180px;
 	padding: 7px 10px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     outline: none !important;
-	margin-bottom: 133px;
+	margin-bottom: 143px;
 	background: #fff;
 
 	.form-title {
@@ -51,7 +51,7 @@
 	.form-control_username {
 
 		position: absolute;
-		top: 203px;
+		top: 240px;
 		left: 24px;
 
 		&:focus + .form-group_label-login {
@@ -72,7 +72,7 @@
 	.form-control_password {
 
 		position: absolute;
-		top: 267px;
+		top: 308px;
 		left: 24px;
 
 		&:focus + .form-group_label-password {

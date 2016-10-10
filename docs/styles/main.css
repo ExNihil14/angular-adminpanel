@@ -293,6 +293,13 @@ a:focus {
   display: none;
 }
 
+.wrapper .label-checkbox {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+}
+
 .wrapper .form-actions {
   display: -webkit-box;
   display: -moz-flex;

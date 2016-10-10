@@ -1,0 +1,33 @@
+.footer {
+
+  background: $base-color;
+  
+
+  .footer_row {
+
+    @include flexbox;
+    @include flex-direction(row);
+    @include justify-content(center);
+    @include align-items(center); 
+ 
+      .footer_item_left,
+      .footer_item_center,
+      .footer_item_right {
+
+      
+        @extend %inline-flex;
+        @include flex-wrap(nowrap);
+      
+        line-height: 19px;
+        font-weight: 400;
+        font-family: Roboto, sans-serif;
+        font-size: 15pt;
+        margin: 0 !important;
+        color: rgb(255, 255, 255);
+        padding: 15px 10px 15px 0;
+
+      }
+
+  }   
+  
+}

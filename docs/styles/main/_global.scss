@@ -1,0 +1,37 @@
+$base-color: #1a237e;
+$base-bg-color:#e0e0e0;
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,600italic,700,800,400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,600,600italic,700,800,400italic);
+
+
+*, *:before, *:after {
+
+  -webkit-box-sizing: border-box; /* Нужно для мобильного WebKit */
+  -moz-box-sizing: border-box; /* Нужно для Firefox */
+  box-sizing: border-box;
+
+}
+
+body {
+
+	min-height: 100%;
+	overflow: visible;
+	font-family: 'Roboto', sans-serif;
+	background: $base-bg-color;
+	font-size: 100%;
+
+}
+
+a:hover {
+
+	text-decoration: none;
+	
+}
+
+a:focus {
+
+	text-decoration: none;
+
+}
+

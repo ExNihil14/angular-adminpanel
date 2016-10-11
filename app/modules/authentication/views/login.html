@@ -52,8 +52,13 @@
 
         </div>
 
-            <input id="saved" type="checkbox"><i class="fa fa-square-o fa-2x" aria-hidden="true"></i> 
-            <label for="saved" class="label-checkbox">Запомнить меня</label>
+            <a class="btn btn-default" ng-model="expand" 
+                btn-checkbox btn-checkbox-true="true" 
+                btn-checkbox-false="false"
+                 ng-click="expand=!expand">
+                <i class="fa" ng-class="{'fa-square-o': !expand, 'fa-check-square-o checked': expand}"></i> 
+                Запомнить меня
+            </a>
 
         <div class="form-actions">
 

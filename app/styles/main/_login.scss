@@ -7,30 +7,30 @@
 
 .wrapper {
 
+	background: #fff;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	margin-bottom: 139px;
 	margin-top: 180px;
 	padding: 7px 10px;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     outline: none !important;
-	margin-bottom: 142px;
-	background: #fff;
 
 	.form-title {
 
 		font-size: 18px;
-    	font-weight: 400;
-    	font-family: Roboto, sans-serif;
-    	line-height: 18px;
     	color:rgba(0, 0, 0, 0.87);
-    	padding: 5px 5px;
+    	font-family: Roboto, sans-serif;
+    	font-weight: 400;
+    	line-height: 18px;
     	margin-bottom: 20px;
+    	padding: 5px 5px;
     	
 	}
 
 	.form-group-username,
 	.form-group-password {
 
+		height: 46px;
 		margin-bottom: 20px;
-		height: 46px
 
 	}
 
@@ -50,14 +50,14 @@
 
 	.form-control_username {
 
+		left: 24px;
 		position: absolute;
 		top: 240px;
-		left: 24px;
 
 		&:focus + .form-group_label-login {
 
-				color: #1a237e;
-				transform: scale(0.85) translateY(-25px) translateX(-6px);
+			color: #1a237e;
+			transform: scale(0.85) translateY(-25px) translateX(-6px);
 
 		}
 
@@ -71,14 +71,14 @@
 
 	.form-control_password {
 
+		left: 24px;
 		position: absolute;
 		top: 308px;
-		left: 24px;
 
 		&:focus + .form-group_label-password {
 
-				color: #1a237e;
-				transform: scale(0.85) translateY(-25px) translateX(-6px);
+			color: #1a237e;
+			transform: scale(0.85) translateY(-25px) translateX(-6px);
 
 		}
 
@@ -98,81 +98,71 @@
 	}
 
 	.help-block {
+
 		color: red;
 		margin-bottom: 0;
 	}
 
-	input[type=checkbox] { 
+	.checked {
 
-		display:none; 
-
-	} /* to hide the checkbox itself */
-
-	/*input[type=checkbox] + label:before {
-
-  		font-family: FontAwesome;
-  		display: inline-block;
+		color:#3892d4;
 
 	}
 
-	input[type=checkbox] + label:before { 
+	.fa {
 
-		content: "\f096"; 
-
-	} /* unchecked icon */
-
-	/*input[type=checkbox] + label:before { 
-
-		letter-spacing: 5px; 
-
-	} /* space between checkbox and label */
-
-	/*input[type=checkbox]:checked + label:before {
-
- 		content: "\f046"; 
-
-	} /* checked icon */
-
-	/*input[type=checkbox]:checked + label:before {
-
- 		letter-spacing: 3px; 
-
-	} /* allow space for check mark */
-
-	i {
+		font-size: 18px;
 		margin-right: 5px;
+		width:13px;
+
 	}
 
-	.label-checkbox {
+	.btn-default {
 
 		color: rgba(0, 0, 0, 0.87);
+    	background-color: inherit;
+    	border: none;
+    	font-family: Roboto, sans-serif;
     	font-size: 14px;
     	font-weight: 400;
-    	font-family: Roboto, sans-serif;
+    	padding: 0;
+
+    	&:hover {
+
+    		background-color: inherit;
+    		color: rgba(0, 0, 0, 0.87);
+
+    	} 
+
+    	&:active {
+
+			background-color: inherit;
+
+    	}
 
 	}
 
 	.form-actions {
 
 		@include flexbox;
+    	@include align-items(center);	
     	@include flex-direction(row);
     	@include justify-content(center);
-    	@include align-items(center);	
+    	margin-top: 10px;
 
 		.btn {
 	
 			background:#fff;
-			border: none;
 			border-radius: 0;
+			border: none;
 			font-size: 16px !important;
+    		@extend %inline-flex;
     		color: $base-color !important;
     		font-weight: 600 !important;
-    		@extend %inline-flex;
     	  	@include flex-wrap(nowrap);
     	  	opacity: 1;
 
-	
-    	}
+	   	}
 
 	}
 

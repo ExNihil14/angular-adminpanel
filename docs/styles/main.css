@@ -58,6 +58,42 @@ a:focus {
   font: 400 14px/21px Roboto, sans-serif;
 }
 
+.form-control_search, .form-control_datato, .form-control_datado {
+  -moz-box-shadow: none;
+  -moz-box-sizing: content-box;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-box-shadow: none;
+  -webkit-box-sizing: content-box;
+  -webkit-transition: 0.3s;
+  border-bottom: 1px solid #9e9e9e !important;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  box-sizing: content-box;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  outline: none;
+  padding: 0 0 3px 0;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  background-color: #fff;
+  font: 400 14px/21px Roboto, sans-serif;
+}
+
+.form-group_search .fa-search, .form-group_datato .fa-calendar, .form-group_datado .fa-calendar {
+  font-size: 16px !important;
+  font-family: FontAwesome;
+  width: 32px !important;
+  font: 16px/32px FontAwesome;
+  background: #fff;
+  color: #919191;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  border-bottom: 1px solid #9e9e9e;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -145,6 +181,13 @@ a:focus {
   align-items: center;
   margin-top: 8px;
   padding-right: 0;
+}
+
+.header .row .right .icon-profile {
+  border-radius: 50% !important;
+  position: absolute;
+  top: -23px;
+  left: 75px;
 }
 
 .header .row .right .btn-primary {
@@ -323,8 +366,8 @@ a:focus {
   opacity: 1;
 }
 
-.toggle .section-lenta {
-  width: 80%;
+.toggle .wrapper-content {
+  width: 85% !important;
 }
 
 .toggle li {
@@ -404,11 +447,120 @@ aside.sidebar ul {
   padding: 0px;
 }
 
-.section-lenta {
-  width: 80%;
+.wrapper-contant {
+  width: 75%;
   margin-top: 60px;
   margin-left: 290px;
-  overflow: scroll;
+  background: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  outline: none !important;
+  padding: 0px;
+}
+
+.page-header {
+  padding: 6px 0 6px 10px;
+}
+
+.form-group_search {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.form-group_search .fa-search {
+  margin-left: 105px;
+}
+
+.form-group_datato {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.form-group_datado {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.container {
+  width: auto;
+}
+
+.form-group_label-search,
+.form-group_label-datato,
+.form-group_label-datado {
+  color: #9e9e9e;
+  font: 400 14px/17px Roboto, sans-serif;
+  min-height: 32px;
+  padding-right: 5px;
+  padding-top: 8px;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s;
+          transition: transform 0.2s;
+  display: inline-block;
+}
+
+.form-group_label-datato {
+  -webkit-transform: scale(0.85) translateY(-25px) translateX(-15px);
+          transform: scale(0.85) translateY(-25px) translateX(-15px);
+}
+
+.form-group_label-datado {
+  -webkit-transform: scale(0.85) translateY(-25px) translateX(-5px);
+          transform: scale(0.85) translateY(-25px) translateX(-5px);
+}
+
+.form-control_search {
+  left: 300px;
+  position: absolute;
+  top: 114px;
+  width: 20%;
+}
+
+.form-control_search:focus + .form-group_label-search {
+  color: #1a237e;
+  -webkit-transform: scale(0.85) translateY(-25px) translateX(-15px);
+          transform: scale(0.85) translateY(-25px) translateX(-15px);
+}
+
+.form-control_search:focus + .fa-search {
+  border-bottom: 1px solid #1a237e !important;
+}
+
+.form-control_search:focus {
+  border-bottom: 1px solid #1a237e !important;
+}
+
+.form-control_datato {
+  left: 624px;
+  position: absolute;
+  top: 114px;
+  width: 10%;
+}
+
+.form-control_datato:focus + .form-group_label-datato {
+  color: #1a237e;
+}
+
+.form-control_datato:focus {
+  border-bottom: 1px solid #1a237e !important;
+}
+
+.form-control_datado {
+  left: 820px;
+  position: absolute;
+  top: 114px;
+  width: 10%;
+}
+
+.form-control_datado:focus + .form-group_label-datado {
+  color: #1a237e;
+}
+
+.form-control_datado:focus {
+  border-bottom: 1px solid #1a237e !important;
 }
 
 .footer {

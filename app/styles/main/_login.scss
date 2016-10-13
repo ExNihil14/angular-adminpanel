@@ -11,8 +11,8 @@
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 	margin-bottom: 139px;
 	margin-top: 180px;
+	outline: none !important;
 	padding: 7px 10px;
-    outline: none !important;
 
 	.form-title {
 
@@ -38,13 +38,13 @@
 	.form-group_label-password {
 
 		color: #9e9e9e;
+		display: inline-block;
 		font: 400 14px/17px Roboto, sans-serif;
 		min-height: 32px;
 		padding-right: 5px;
 		padding-top: 8px;
 		position: relative;
 		transition: transform 0.2s;
-  		display: inline-block;
 		
 	}
 
@@ -119,13 +119,13 @@
 
 	.btn-default {
 
+		background-color: inherit;
+		border: none;
 		color: rgba(0, 0, 0, 0.87);
-    	background-color: inherit;
-    	border: none;
-    	font-family: Roboto, sans-serif;
-    	font-size: 14px;
-    	font-weight: 400;
-    	padding: 0;
+		font-family: Roboto, sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		padding: 0;
 
     	&:hover {
 
@@ -144,23 +144,23 @@
 
 	.form-actions {
 
+		@include align-items(center);	
+		@include flex-direction(row);
 		@include flexbox;
-    	@include align-items(center);	
-    	@include flex-direction(row);
-    	@include justify-content(center);
-    	margin-top: 10px;
+		@include justify-content(center);
+		margin-top: 10px;
 
 		.btn {
 	
+			@extend %inline-flex;
+			@include flex-wrap(nowrap);
 			background:#fff;
 			border-radius: 0;
 			border: none;
+			color: $base-color !important;
 			font-size: 16px !important;
-    		@extend %inline-flex;
-    		color: $base-color !important;
-    		font-weight: 600 !important;
-    	  	@include flex-wrap(nowrap);
-    	  	opacity: 1;
+			font-weight: 600 !important;
+			opacity: 1;
 
 	   	}
 

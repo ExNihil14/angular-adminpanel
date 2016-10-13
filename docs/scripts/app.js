@@ -4,6 +4,7 @@
 angular.module('Authentication', []);
 angular.module('Home', []);
 
+
 /**
  * @ngdoc overview
  * @name angularAdminpanelApp
@@ -18,7 +19,7 @@ angular
     'ngCookies',
     'ngRoute'
   ])
-  .config(['$routeProvider', function ($routeProvider) {
+.config(['$routeProvider', function ($routeProvider) {
 
     $routeProvider
         .when('/login', {
@@ -49,4 +50,4 @@ angular
                 $location.path('/login');
             }
         });
-    }]);
+}]);

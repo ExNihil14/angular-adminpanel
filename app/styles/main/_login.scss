@@ -29,6 +29,7 @@
 	.form-group-username,
 	.form-group-password {
 
+		position: relative;
 		height: 46px;
 		margin-bottom: 20px;
 
@@ -50,9 +51,8 @@
 
 	.form-control_username {
 
-		left: 24px;
 		position: absolute;
-		top: 240px;
+		top: 5px;
 
 		&:focus + .form-group_label-login {
 
@@ -71,9 +71,8 @@
 
 	.form-control_password {
 
-		left: 24px;
 		position: absolute;
-		top: 308px;
+		top: 5px;
 
 		&:focus + .form-group_label-password {
 

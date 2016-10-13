@@ -53,7 +53,7 @@ a:focus {
   padding: 0 0 3px 0;
   -webkit-transition: 0.3s;
           transition: 0.3s;
-  width: 87%;
+  width: 100%;
   background-color: #fff;
   font: 400 14px/21px Roboto, sans-serif;
 }
@@ -95,11 +95,11 @@ a:focus {
 }
 
 .header {
+  background: #1a237e;
+  height: 50px;
   position: fixed;
   top: 0;
   width: 100%;
-  background: #1a237e;
-  height: 50px;
 }
 
 .header .row {
@@ -107,6 +107,10 @@ a:focus {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -moz-align-items: center;
+  align-items: center;
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
   -moz-flex-direction: row;
@@ -116,10 +120,6 @@ a:focus {
   -ms-flex-pack: justify;
   -moz-justify-content: space-between;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -moz-align-items: center;
-  align-items: center;
 }
 
 .header .row .left {
@@ -166,6 +166,10 @@ a:focus {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -moz-align-items: center;
+  align-items: center;
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
   -moz-flex-direction: row;
@@ -175,19 +179,15 @@ a:focus {
   -ms-flex-pack: end;
   -moz-justify-content: flex-end;
   justify-content: flex-end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -moz-align-items: center;
-  align-items: center;
   margin-top: 8px;
   padding-right: 0;
 }
 
 .header .row .right .icon-profile {
+  left: 75px;
+  top: -23px;
   border-radius: 50% !important;
   position: absolute;
-  top: -23px;
-  left: 75px;
 }
 
 .header .row .right .btn-primary {
@@ -196,18 +196,18 @@ a:focus {
 }
 
 .header .row .right .caret {
-  margin-left: 10px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
   border-top: 6px dashed;
   border-top: 6px solid \9;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
+  margin-left: 10px;
 }
 
 .header .row .right .dropdown-menu {
-  left: -72px;
   font-size: 16px;
-  margin: 7px 0 0;
   font-weight: 400;
+  left: -72px;
+  margin: 7px 0 0;
   padding: 0;
 }
 
@@ -234,8 +234,8 @@ a:focus {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   margin-bottom: 139px;
   margin-top: 180px;
-  padding: 7px 10px;
   outline: none !important;
+  padding: 7px 10px;
 }
 
 .wrapper .form-title {
@@ -250,6 +250,7 @@ a:focus {
 
 .wrapper .form-group-username,
 .wrapper .form-group-password {
+  position: relative;
   height: 46px;
   margin-bottom: 20px;
 }
@@ -257,6 +258,7 @@ a:focus {
 .wrapper .form-group_label-login,
 .wrapper .form-group_label-password {
   color: #9e9e9e;
+  display: inline-block;
   font: 400 14px/17px Roboto, sans-serif;
   min-height: 32px;
   padding-right: 5px;
@@ -264,13 +266,11 @@ a:focus {
   position: relative;
   -webkit-transition: -webkit-transform 0.2s;
           transition: transform 0.2s;
-  display: inline-block;
 }
 
 .wrapper .form-control_username {
-  left: 24px;
   position: absolute;
-  top: 240px;
+  top: 5px;
 }
 
 .wrapper .form-control_username:focus + .form-group_label-login {
@@ -284,9 +284,8 @@ a:focus {
 }
 
 .wrapper .form-control_password {
-  left: 24px;
   position: absolute;
-  top: 308px;
+  top: 5px;
 }
 
 .wrapper .form-control_password:focus + .form-group_label-password {
@@ -315,9 +314,9 @@ a:focus {
 }
 
 .wrapper .btn-default {
-  color: rgba(0, 0, 0, 0.87);
   background-color: inherit;
   border: none;
+  color: rgba(0, 0, 0, 0.87);
   font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -334,10 +333,6 @@ a:focus {
 }
 
 .wrapper .form-actions {
-  display: -webkit-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   -moz-align-items: center;
@@ -347,6 +342,10 @@ a:focus {
   -moz-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -moz-justify-content: center;
@@ -355,14 +354,14 @@ a:focus {
 }
 
 .wrapper .form-actions .btn {
+  -ms-flex-wrap: none;
+  flex-wrap: nowrap;
   background: #fff;
   border-radius: 0;
   border: none;
-  font-size: 16px !important;
   color: #1a237e !important;
+  font-size: 16px !important;
   font-weight: 600 !important;
-  -ms-flex-wrap: none;
-  flex-wrap: nowrap;
   opacity: 1;
 }
 
@@ -448,13 +447,13 @@ aside.sidebar ul {
 }
 
 .wrapper-contant {
-  width: 75%;
-  margin-top: 60px;
-  margin-left: 290px;
   background: white;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-left: 290px;
+  margin-top: 60px;
   outline: none !important;
   padding: 0px;
+  width: 75%;
 }
 
 .page-header {
@@ -464,8 +463,8 @@ aside.sidebar ul {
 .form-group_search {
   display: inline-block;
   margin-bottom: 0;
-  vertical-align: middle;
   margin-right: 20px;
+  vertical-align: middle;
 }
 
 .form-group_search .fa-search {
@@ -492,6 +491,7 @@ aside.sidebar ul {
 .form-group_label-datato,
 .form-group_label-datado {
   color: #9e9e9e;
+  display: inline-block;
   font: 400 14px/17px Roboto, sans-serif;
   min-height: 32px;
   padding-right: 5px;
@@ -499,7 +499,6 @@ aside.sidebar ul {
   position: relative;
   -webkit-transition: -webkit-transform 0.2s;
           transition: transform 0.2s;
-  display: inline-block;
 }
 
 .form-group_label-datato {
@@ -567,7 +566,6 @@ aside.sidebar ul {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 50px;
   background: #1a237e;
 }

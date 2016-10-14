@@ -17,24 +17,35 @@ angular
   .module('angularAdminpanelApp', ['ui.bootstrap','Authentication',
     'Home',
     'ngCookies',
-    'ngRoute'
+    'ui.router'
   ])
-.config(['$routeProvider', function ($routeProvider) {
+.config(function($stateProvider, $urlRouterProvider) {
 
-    $routeProvider
-        .when('/login', {
-            controller: 'LoginController',
-            templateUrl: 'modules/authentication/views/login.html',
-            hideMenus: true
-        })
- 
-        .when('/', {
-            controller: 'HomeController',
-            templateUrl: 'modules/home/views/home.html'
-        })
+    // default route
+        $urlRouterProvider.otherwise("/");
 
-        .otherwise({ redirectTo: '/login' });
-}])
+        // app routes
+        $stateProvider
+            .state('home', {
+                url: '/',
+                templateUrl: 'modules/home/views/home.html',
+                controller: 'HomeController'                
+            })
+            .state('home.tables', {
+                url: '/tables',
+                templateUrl: 'templates/tables.html'                               
+            })
+            .state('home.dashboard', {
+                url: '/dashboard',
+                templateUrl: 'templates/dashboard.html'                               
+            })
+            .state('login', {
+                url: '/login',
+                templateUrl: 'modules/authentication/views/login.html',
+                controller: 'LoginController'
+            });
+
+    })   
  
 .run(['$rootScope', '$location', '$cookieStore', '$http',
     function ($rootScope, $location, $cookieStore, $http) {

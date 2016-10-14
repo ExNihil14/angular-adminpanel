@@ -50,7 +50,7 @@
 
     <li>
 
-      <a ng-href="#/" class="sidebar_link-lenta">
+      <a ng-href="#/" ui-sref="home.tables" lass="sidebar_link-lenta">
 
         <i class="fa fa-list-alt fa-2x" aria-hidden="true"></i>
 
@@ -62,7 +62,7 @@
 
     <li>
 
-      <a ng-href="#/" class="sidebar_link-building">
+      <a ng-href="#/" ui-sref="home.dashboard" class="sidebar_link-building">
 
       <i class="fa fa-building-o fa-2x" aria-hidden="true"></i>
 
@@ -90,6 +90,7 @@
 
 <div class="wrapper-contant" ng-class="{ 'toggle': hideDetails }">
   <lenta></lenta>
+  <div ui-view></div>
 </div>
 
 

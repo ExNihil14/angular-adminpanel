@@ -1,0 +1,88 @@
+.wrapper-settings {
+    background: inherit;
+    margin-left: 290px;
+    margin-top: 60px;
+    outline: none !important;
+    padding: 0px;
+    width: 75%;
+    height: auto;
+}
+
+.container {
+
+    width:auto;
+
+}
+
+.data-view {
+
+    width: 300px;
+    height: 150px;
+    display: inline-block
+
+}
+.data-view div{
+    cursor: pointer;
+}
+
+.box-shadow {
+    /*padding: 10px !important;*/
+    background: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    outline: none !important;
+}
+
+.sub-menu i{
+    font-size: 64px;
+    margin-left: 118px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sub-menu:hover i{
+    transition-duration: 0.3s;
+    margin-left: 119px;
+    font-size: 62px;
+}
+
+.sub-menu .icon{
+    height: 90px;
+}
+
+.sub-menu .text{
+    display: table-row;
+    background: rgba(158, 158, 158, 0.25);
+}
+
+.sub-menu:hover .text{
+    transition-duration: 0.3s ;
+    background: #505050 !important;
+}            
+
+.sub-menu{
+    width:300px;
+    height:150px;
+    margin:10px;
+    /*padding: 10px;*/
+    display:table;
+}
+
+.sub-menu p{
+    color: #505050 !important;
+    font-size: 13px;
+    margin: 0px;
+    line-height: 12px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.sub-menu:hover p{
+    transition-duration: 0.3s ;
+    color: rgb(200, 200, 200) !important;
+}
+
+.data-view .box-shadow:hover{
+    transition-duration: 0.3s ;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

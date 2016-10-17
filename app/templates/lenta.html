@@ -1,0 +1,97 @@
+<div class="wrapper-contant" ng-class="{ 'toggle': hideDetails }">
+
+
+<section class="section-lenta">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="page-header">
+
+        <form class="form-inline">
+
+          <div class="form-group_search">
+
+          <input type="text" name="search" class="form-control_search" id="search" ng-model="search">
+
+          <label for="search" class="form-group_label-search" ng-class="{'filled': (search.length > 0)}">Поиск по пользователю</label>
+
+          <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>  
+
+          </div>
+
+          <div class="form-group_datato">
+
+          <input type="data" name="datato" ng-model="datato" class="form-control_datato" id="datato">
+
+          <label for="datato" class="form-group_label-datato">Показывать события с</label>
+
+          <a href=""><i class="fa fa-calendar" aria-hidden="true"></i></a>   
+      
+          </div>
+
+         <div class="form-group_datado">
+
+          <input type="data" name="datado" ng-model="datado" class="form-control_datado" id="datado">
+
+          <label for="datado" class="form-group_label-datado">по</label>
+
+          <a href=""><i class="fa fa-calendar" aria-hidden="true"></i></a>
+
+          </div>
+
+          <div class="form-group_combo">
+
+            <input type="text" name="combo" ng-model="combo" class="form-control_combo" id="combo">
+
+            <label for="combo" class="form-group_label-сombo">Поиск по типу</label>
+
+            <a href=""><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+          </div>
+         </form>
+
+      </div>
+
+    </div>
+
+      <div class="row">
+
+        <div class="col-md-6">
+
+          <div class="card no-margin">
+
+            <div class="table-responsive white">
+              <h3 class="table-title p-20">Basic table</h3>
+
+              <table class="table table-full table-full-small">
+                
+                <thead>
+                <tr>
+                  <th>Icon</th>
+                  <th>Name</th>
+                  <th>Last</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr >
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+  </div>
+
+</section>
+
+</div>

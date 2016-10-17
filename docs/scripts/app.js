@@ -31,13 +31,17 @@ angular
                 templateUrl: 'modules/home/views/home.html',
                 controller: 'HomeController'                
             })
-            .state('home.tables', {
-                url: '/tables',
-                templateUrl: 'templates/tables.html'                               
+            .state('home.settings', {
+                url: '/settings',
+                templateUrl: 'templates/settings.html'                               
             })
             .state('home.dashboard', {
                 url: '/dashboard',
                 templateUrl: 'templates/dashboard.html'                               
+            })
+            .state('home.lenta', {
+                url: '/lenta',
+                templateUrl: 'templates/lenta.html'                               
             })
             .state('login', {
                 url: '/login',

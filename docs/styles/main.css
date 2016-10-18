@@ -163,6 +163,7 @@ a:focus {
 .header .row .header_toggle {
   color: #fff;
   margin-left: 35px;
+  cursor: pointer;
 }
 
 .header .row p {

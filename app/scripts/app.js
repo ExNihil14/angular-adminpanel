@@ -27,6 +27,7 @@ angular
         // app routes
         $stateProvider
             .state('home', {
+                abstract: true,
                 url: '/',
                 templateUrl: 'modules/home/views/home.html',
                 controller: 'HomeController'                
@@ -40,7 +41,7 @@ angular
                 templateUrl: 'templates/dashboard.html'                               
             })
             .state('home.lenta', {
-                url: '/lenta',
+                url: '',
                 templateUrl: 'templates/lenta.html'                               
             })
             .state('login', {

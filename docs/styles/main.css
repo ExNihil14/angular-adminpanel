@@ -149,6 +149,7 @@ a:focus {
   -moz-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-left: 30px;
 }
 
 .header .container-fluid .row .img-responsive {
@@ -174,12 +175,12 @@ a:focus {
   color: white;
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  margin: 0 0 0 30px;
+  margin: 0;
 }
 
 .header .container-fluid .row .header_toggle {
   color: #fff;
-  margin-left: 35px;
+  margin-left: 15px;
   cursor: pointer;
 }
 

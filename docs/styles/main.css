@@ -614,9 +614,13 @@ aside.sidebar ul {
   border-bottom: 1px solid #1a237e !important;
 }
 
+.toggle-settings {
+  margin-left: 70px !important;
+}
+
 .wrapper-settings {
   background: inherit;
-  margin-left: 290px;
+  margin-left: 270px;
   margin-top: 60px;
   outline: none !important;
   padding: 0px;

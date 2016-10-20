@@ -98,6 +98,53 @@
 
 			}
 
+			.dropdown-menu {
+				    
+					font-size: 16px;
+					font-weight: 400;
+					padding: 0;
+					top: 30px;
+					width: 170px;
+
+					.sort-list-selected {
+
+						background: #1a237e;
+						border-color: #1a237e;
+						color: #fff;
+						cursor: hand;
+						cursor: pointer;
+						font: normal 14px Roboto, sans-serif;
+						line-height: 30px;
+						padding: 0 10px;
+						position: relative;
+
+					}
+
+					.sort-list-item {
+
+						border-color: #fff;
+						border-style: dotted;
+						border-width: 1px;
+						color: rgba(0, 0, 0, 0.87);
+						cursor: hand;
+						cursor: pointer;
+						font: normal 14px Roboto, sans-serif;
+						line-height: 30px;
+						padding: 0 10px;
+						position: relative;
+
+					    &:hover {
+
+							background:#484f98;
+							border-color:#484f98;
+							color:#fff;
+
+						}
+
+					}
+				    
+				}
+
 		}
 
 

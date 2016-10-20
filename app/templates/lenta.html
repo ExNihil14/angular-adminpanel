@@ -41,13 +41,27 @@
 
           </div>
 
-          <div class="form-group_sort">
+          <div class="form-group_sort" uib-dropdown is-open="status.isopen2">
 
             <input type="text" name="sort" ng-model="sort" class="form-control_sort" id="sort">
 
             <label for="sort" class="form-group_label-sort">Поиск по типу</label>
 
-            <a href=""><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <a href="" uib-dropdown-toggle ng-disabled="disabled"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+            <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+
+                  <li role="menuitem" class="sort-list-selected">Все</li>
+
+                  <li role="menuitem" class="sort-list-item">Ошибка входа</li>
+
+                  <li role="menuitem" class="sort-list-item">Загрузка прайсов</li>
+
+                  <li role="menuitem" class="sort-list-item">Ошибка настроек FTP</li>
+
+                  <li role="menuitem" class="sort-list-item">Договора</li>
+                 
+            </ul>
 
           </div>
          </form>
@@ -58,34 +72,12 @@
 
       <div class="row">
 
-        <div class="col-md-6">
+        <ul>
 
-          <div class="card no-margin">
+          <li ></li>
 
-            <div class="table-responsive white">
-              <h3 class="table-title p-20">Basic table</h3>
+        </ul>
 
-              <table class="table table-full table-full-small">
-                
-                <thead>
-                <tr>
-                  <th>Icon</th>
-                  <th>Name</th>
-                  <th>Last</th>
-                </tr>
-                </thead>
-                <tbody>
-
-                <tr >
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
 
         
       </div>

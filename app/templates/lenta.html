@@ -43,7 +43,7 @@
 
           <div class="form-group_sort" uib-dropdown is-open="status.isopen2">
 
-            <input type="text" name="sort" ng-model="sort" class="form-control_sort" id="sort">
+            <input type="text" name="sort" ng-model="sort.title" class="form-control_sort" id="sort">
 
             <label for="sort" class="form-group_label-sort">Поиск по типу</label>
 
@@ -51,15 +51,15 @@
 
             <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
 
-                  <li role="menuitem" class="sort-list-selected">Все</li>
+                  <li role="menuitem" class="sort-list-selected" ng-click="set('Все')">Все</li>
 
-                  <li role="menuitem" class="sort-list-item">Ошибка входа</li>
+                  <li role="menuitem" class="sort-list-item" ng-click="set('Ошибка входа')">Ошибка входа</li>
 
-                  <li role="menuitem" class="sort-list-item">Загрузка прайсов</li>
+                  <li role="menuitem" class="sort-list-item" ng-click="set('Загрузка прайсов')">Загрузка прайсов</li>
 
-                  <li role="menuitem" class="sort-list-item">Ошибка настроек FTP</li>
+                  <li role="menuitem" class="sort-list-item" ng-click="set('Ошибка настроек FTP')">Ошибка настроек FTP</li>
 
-                  <li role="menuitem" class="sort-list-item">Договора</li>
+                  <li role="menuitem" class="sort-list-item" ng-click="set('Договора')">Договора</li>
                  
             </ul>
 

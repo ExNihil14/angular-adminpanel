@@ -6,6 +6,13 @@ angular.module('Home')
 
 function HomeController($scope, $cookieStore) {
 
-$scope.username = "admin";
+
+$scope.sort = {title:''};
+        
+$scope.set = function(new_title) {
+
+    this.sort.title = new_title;
+
+}
 
 }

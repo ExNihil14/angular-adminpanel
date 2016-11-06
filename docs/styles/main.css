@@ -112,6 +112,7 @@ a:focus {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .header .container-fluid {
@@ -569,7 +570,7 @@ aside.sidebar ul {
 }
 
 .form-inline .form-group_sort .fa-caret-down {
-  margin-left: 40px;
+  margin-left: 45px;
 }
 
 .form-inline .form-group_sort .dropdown-menu {
